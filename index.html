@@ -3,148 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarlinVisuals | Packaging Design & Branding Experts</title>
+    <title>MarlinVisuals | Strategic Brand Design Partners</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @keyframes fadeIn {
+        @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+        .scroll-down-arrow { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(10px); } }
     </style>
 </head>
-<body class="font-['Inter'] bg-white">
+<body class="font-['Inter']">
     <!-- Hero Section -->
-    <header class="relative min-h-screen flex items-center justify-center">
-        <div class="absolute inset-0 bg-[url('https://via.placeholder.com/1920x1080')] bg-cover bg-center">
-            <div class="absolute inset-0 bg-[#1a2b4c]/90"></div>
-        </div>
-        
-        <div class="relative z-10 container mx-auto px-6 text-center text-white">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">
-                <span class="block mb-4">Packaging Design</span>
-                <span class="text-[#1abc9c]">That Demands Attention</span>
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto fade-in">
-                Transform your product's first impression with strategic packaging design and brand storytelling
-            </p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6 fade-in">
-                <a href="#contact" class="bg-[#1abc9c] hover:bg-[#16a085] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all">
-                    Get a Free Quote
-                </a>
-                <a href="#portfolio" class="flex items-center gap-2 group text-lg hover:text-[#1abc9c] transition-colors">
-                    See Portfolio
-                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                    </svg>
-                </a>
+    <section class="relative h-screen flex items-center justify-center bg-[url('https://source.unsplash.com/random/1920x1080/?design,abstract')] bg-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1a2b4c]/90 to-[#1a2b4c]/60"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">Transform Your Brand Vision</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in-up">Strategic design solutions that elevate businesses and captivate audiences</p>
+            <div class="space-x-4 animate-fade-in-up">
+                <a href="#contact" class="bg-[#1abc9c] hover:bg-[#16a085] px-8 py-3 rounded-full font-semibold transition-colors">Get Free Quote</a>
+                <a href="#portfolio" class="border-2 border-white hover:bg-white/10 px-8 py-3 rounded-full transition-colors">See Portfolio</a>
+            </div>
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-down-arrow">
+                <i class="fa-solid fa-chevron-down text-2xl"></i>
             </div>
         </div>
-
-        <div class="absolute bottom-8 animate-bounce">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-            </svg>
-        </div>
-    </header>
+    </section>
 
     <!-- Why Choose Us -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-[#1a2b4c]">Why Leading Brands Choose Us</h2>
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#1a2b4c]">Why Partner With MarlinVisuals</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="feature-card opacity-0 bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                    <div class="w-12 h-12 bg-[#1abc9c] rounded-full mb-4 flex items-center justify-center text-white">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Shelf Impact Focused</h3>
-                    <p class="text-gray-600">We combine consumer psychology with bold design to create packaging that stops shoppers in their tracks</p>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fa-solid fa-cube text-4xl text-[#f39c12] mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">360° Brand Systems</h3>
+                    <p class="text-gray-600">Comprehensive visual ecosystems that maintain consistency across all touchpoints</p>
                 </div>
-                <!-- Repeat 2 more feature cards -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fa-solid fa-chart-line text-4xl text-[#1abc9c] mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Data-Informed Creativity</h3>
+                    <p class="text-gray-600">Market insights combined with artistic execution to drive measurable results</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fa-solid fa-infinity text-4xl text-[#1a2b4c] mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">End-to-End Partnership</h3>
+                    <p class="text-gray-600">From concept to launch and beyond - we grow with your business</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Preview -->
-    <section id="portfolio" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-[#1a2b4c]">Recent Brand Transformations</h2>
+    <section id="portfolio" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#1a2b4c]">Signature Projects</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="portfolio-item opacity-0 group relative overflow-hidden rounded-xl">
-                    <img src="https://via.placeholder.com/600x800" alt="Organic Skincare Packaging" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a2b4c] via-transparent p-6 flex flex-col justify-end">
-                        <h3 class="text-white font-bold text-xl">EcoGlow Skincare</h3>
-                        <p class="text-[#1abc9c]">Sustainable Luxury Packaging</p>
+                <div class="group relative overflow-hidden rounded-xl">
+                    <img src="https://source.unsplash.com/random/800x600/?branding" alt="Project" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform">
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <h4 class="text-white text-2xl font-bold">Oceanic Tech Rebrand</h4>
                     </div>
                 </div>
-                <!-- Repeat 2 more portfolio items -->
+                <!-- Repeat similar blocks for other portfolio items -->
             </div>
         </div>
     </section>
 
     <!-- Design Process -->
-    <section class="py-20 bg-[#1a2b4c] text-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our 4-Phase Design Process</h2>
+    <section class="py-20 px-6 bg-[#1a2b4c] text-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Strategic Process</h2>
             <div class="grid md:grid-cols-4 gap-8">
-                <div class="process-step opacity-0 text-center">
-                    <div class="w-20 h-20 bg-[#1abc9c] rounded-full mx-auto mb-6 flex items-center justify-center">1</div>
-                    <h3 class="text-xl font-bold mb-4">Discovery & Strategy</h3>
-                    <p class="text-gray-300">Market analysis and brand positioning workshop</p>
+                <div class="text-center opacity-0 transition-opacity duration-500">
+                    <div class="w-16 h-16 bg-[#1abc9c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Discovery Workshop</h3>
+                    <p class="text-gray-300">Deep dive into your business objectives and market landscape</p>
                 </div>
-                <!-- Repeat 3 more process steps -->
+                <!-- Repeat for other steps -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
-                <div>
-                    <h5 class="text-xl font-bold mb-4">MarlinVisuals</h5>
-                    <p class="text-gray-400">55 Design Drive<br>New York, NY 10001<br>contact@marlinvisuals.com</p>
-                </div>
-                <div>
-                    <h6 class="font-bold mb-4">Services</h6>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-[#1abc9c] transition-colors">Packaging Design</a></li>
-                        <li><a href="#" class="hover:text-[#1abc9c] transition-colors">Brand Identity</a></li>
-                        <li><a href="#" class="hover:text-[#1abc9c] transition-colors">3D Prototyping</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 class="font-bold mb-4">Connect</h6>
-                    <div class="flex gap-4">
-                        <a href="#" class="hover:text-[#1abc9c] transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        </a>
-                        <!-- Add Pinterest, TikTok, X SVGs -->
-                    </div>
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-bold mb-4">MarlinVisuals</h4>
+                <p class="text-gray-400">Elevating brands through strategic design since 2018</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Services</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-[#1abc9c] transition-colors">Brand Strategy</a></li>
+                    <!-- Add other links -->
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Contact</h5>
+                <p class="text-gray-400">hello@marlinvisuals.com<br>+1 (555) 234-5678</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Connect</h5>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-[#1abc9c] transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    <!-- Add other social icons -->
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 MarlinVisuals. All rights reserved.</p>
-            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+            <p>&copy; 2023 MarlinVisuals. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Scroll animations
+        // Intersection Observer for scroll animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100');
+                    entry.target.style.opacity = 1;
                 }
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.feature-card, .portfolio-item, .process-step').forEach((el) => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.opacity-0').forEach((el) => observer.observe(el));
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
